@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Таблица</title>
+  <style type="text/css">
+    header {
+      font-size: 30px;
+      font-weight: bold;
+      padding-bottom: 30px;
+    }
+    main {
+      border-top: 1px solid #a1a1a1;
+      padding-top: 20px;
+      border-bottom: 1px solid #a1a1a1;
+      padding-bottom: 20px;
+    }
+    textarea {
+      margin-bottom: 15px;
+    }
+    input {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>Запись на курсы программирования</header>
+  <main>
+    <form action = "">
+      <label for="name">Имя:</label><br>
+      <input id = "name" type="text" required placeholder="Андрей"><br>
+      <input type="radio" id="Java" name="lang" value="Java" checked>
+      <label for="Java">Java</label>
+      <input type="radio" id="C++" name="lang" value="C++">
+      <label for="C++">C++</label>
+      <input type="radio" id="Python" name="lang" value="Python">
+      <label for="Python">Python</label>
+      <input type="radio" id="PHP" name="lang" value="PHP">
+      <label for="PHP">PHP</label>
+      <input type="radio" id="JavaScript" name="lang" value="JavaScript">
+      <label for="JavaScript">JavaScript</label><br>
+      <label for="info">Дополнительная информация:</label><br>
+      <textarea id = "info" cols="26" rows="4" placeholder="Есть опыт программирования на Java"></textarea><br>
+      <label for="passwd">Секретное слово:</label><br>
+      <input type="password" id = "passwd" minlength="7" placeholder="password" required name="Секретное слово"><br>
+      <input type="checkbox" id = "agree" required name="Согласие">
+      <label for="agree">С правилами ознакомился и согласен</label><br>
+      <input type="submit" value="Отправить">
+      <input type="submit" value="Очистить">
+    </form>
+  </main>
+</body>
+</html>
