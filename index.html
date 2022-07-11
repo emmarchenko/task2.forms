@@ -28,7 +28,7 @@
   <main>
     <form action = "">
       <label for="name">Имя:</label><br>
-      <input id = "name" type="text" required placeholder="Андрей"><br>
+      <input id = "name" type="text" required placeholder="Андрей" name = "userName"><br>
       <input type="radio" id="Java" name="lang" value="Java" checked>
       <label for="Java">Java</label>
       <input type="radio" id="C++" name="lang" value="C++">
@@ -40,13 +40,13 @@
       <input type="radio" id="JavaScript" name="lang" value="JavaScript">
       <label for="JavaScript">JavaScript</label><br>
       <label for="info">Дополнительная информация:</label><br>
-      <textarea id = "info" cols="26" rows="4" placeholder="Есть опыт программирования на Java"></textarea><br>
+      <textarea id = "info" cols="26" rows="4" placeholder="Есть опыт программирования на Java" name="addinfo"></textarea><br>
       <label for="passwd">Секретное слово:</label><br>
-      <input type="password" id = "passwd" minlength="7" placeholder="password" required name="Секретное слово"><br>
-      <input type="checkbox" id = "agree" required name="Согласие">
+      <input type="password" id = "passwd" minlength="7" placeholder="password" required name="password"><br>
+      <input type="checkbox" id = "agree" required name="agree">
       <label for="agree">С правилами ознакомился и согласен</label><br>
       <input type="submit" value="Отправить">
-      <input type="submit" value="Очистить">
+      <input type="reset" value="Очистить">
     </form>
   </main>
 </body>
